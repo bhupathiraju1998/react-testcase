@@ -94,27 +94,6 @@ class App extends Component {
 
     return (
       <div>{submitBtn ? this.renderHomePage() : this.renderInitialPage()}</div>
-      //   <div>
-      //     <p>PROJECT NAME</p>
-      //     <input
-      //       onChange={this.getProjectName}
-      //       placeholder=" Enter project name"
-      //       className="input-element"
-      //     />
-      //     <p>TEST SCRIPTS</p>
-      //     <input
-      //       onChange={this.selectedFile}
-      //       placeholder=" select testscript"
-      //       className="input-element"
-      //       type="file"
-      //       webkitdirectory
-      //       mozdirectory
-      //       directory
-      //     />
-      //     <br />
-      //     <button>submit</button>
-      //   </div>
-      // );
     );
   }
 
