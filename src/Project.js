@@ -15,8 +15,8 @@ class Project extends Component {
 
     return (
       <div>
-        <input type="checkbox" htmlFor="eachTest" />
-        <label id="eachTest">{eachProject.selectedFileNewList}</label>
+        <input type="checkbox" id="eachTest" />
+        <label htmlFor="eachTest">{eachProject.selectedFileNewList}</label>
       </div>
     );
   };
