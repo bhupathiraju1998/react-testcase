@@ -1,0 +1,19 @@
+h1,
+p {
+  font-family: Lato;
+}
+
+.input-element {
+  margin-bottom: 15px;
+}
+
+.list-style {
+  list-style-type: none;
+}
+
+.transparent-button {
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
