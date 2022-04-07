@@ -11,7 +11,7 @@ class Project extends Component {
   };
 
   handleChange = () => {
-    const { isChecked } = this.state;
+    const { isChecked, valueOfInput } = this.state;
     this.setState((prevstate) => ({
       isChecked: !prevstate.isChecked,
     }));
@@ -23,7 +23,12 @@ class Project extends Component {
 
     return (
       <div>
-        <input type="checkbox" id="eachTest" checked={checked} />
+        <input
+          type="checkbox"
+          id="eachTest"
+          checked={checked}
+          value={eachProject.selectedFileNewList}
+        />
         <label htmlFor="eachTest" onClick={this.handleChange}>
           {eachProject.selectedFileNewList}
         </label>
@@ -32,8 +37,9 @@ class Project extends Component {
   };
 
   render() {
-    const { eachProject, key } = this.props;
-    const { isClick, isChecked } = this.state;
+    const { eachProject } = this.props;
+    const { isClick, isChecked, valueOfInput } = this.state;
+
     return (
       <li>
         <button className="transparent-button" onClick={this.showTestCase}>
