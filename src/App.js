@@ -6,7 +6,7 @@ import './style.css';
 
 class App extends Component {
   state = {
-    projectName: '',
+    projectName: '', 
     selectedFile: '',
     submitBtn: false,
     projectList: [],
