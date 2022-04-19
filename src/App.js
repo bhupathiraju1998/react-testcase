@@ -6,7 +6,7 @@ import './style.css';
 
 class App extends Component {
   state = {
-    projectName: '', 
+    projectName: '',
     selectedFile: '',
     submitBtn: false,
     projectList: [],
@@ -28,7 +28,7 @@ class App extends Component {
       id: v4(),
       projectNameNewList: projectName,
       selectedFileNewList: selectedFile,
-      isClicked:false,
+      isClicked: false,
     };
     if (projectName && selectedFile !== '') {
       this.setState((prevState) => ({
@@ -79,6 +79,7 @@ class App extends Component {
         />
         <p>TEST SCRIPTS</p>
         <input
+          value=""
           onChange={this.selectedFile}
           placeholder=" select testscript"
           className="input-element"
